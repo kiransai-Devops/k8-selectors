@@ -19,14 +19,14 @@ spec:
           #   - ssd
       # soft rule
       preferredDuringSchedulingIgnoredDuringExecution:
-      - weight: 100
+      - weight: 10
         preference:
           matchExpressions:
           - key: project
             operator: In
             values:
             - roboshop
-      - weight: 10
+      - weight: 100
         preference:
           matchExpressions:
           - key: project
